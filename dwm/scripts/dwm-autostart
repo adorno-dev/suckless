@@ -1,0 +1,8 @@
+#!/bin/zsh
+# picom &
+slstatus &
+xwallpaper --zoom ~/.local/suckless/wallpaper.png && echo ~/.local/suckless/wallpaper.png > /tmp/wallpaper &
+/usr/lib/polkit-kde-authentication-agent-1 &
+xrandr --output DP-1 --primary --mode 2560x1440 --scale 1x1 --rate 165.00 --output HDMI-1 --mode 1920x1080 --scale 1x1 --rate 75.00 --right-of DP-1 &
+numlockx on &
+openrgb -p ~/.config/OpenRGB/default.orp &
